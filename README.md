@@ -25,7 +25,7 @@ To start the quest for a solution, I was looking for something that could be mad
 ### Step 1: Pillow
 
 Among some intuitive and unstructured web search I reached to this article [Image Processing in Python with Pillow](https://auth0.com/blog/image-processing-in-python-with-pillow/) from auth0 Blog, identifying Pillow as a natural resource to use.
-From this, and with the help of (Pillow library documentation)[https://pillow.readthedocs.io/en/stable/reference/Image.html], the following script was made to complete the task: see file `sspng2pdf_pil.py`.
+From this, and with the help of [Pillow library documentation](https://pillow.readthedocs.io/en/stable/reference/Image.html), the following script was made to complete the task: see file `sspng2pdf_pil.py`.
 
 The result was great, and the mission could have been concluded, except for the file size, which was almost two-fold the size obtained in the manual process using Gimp.
 
@@ -43,12 +43,12 @@ This triggered a new direction of research.
 
 First, there is an essential concept about images.
 
-    "Many artist-generated images frequently used in digital artwork (such as computer icons, comic book imagery, and simple graphic illustrations) consist of distinctly colored regions with piecewise continuous boundaries.
-    For a range of historic reasons, many such images are still generated in raster, or bitmap formats" [1].
+> "Many artist-generated images frequently used in digital artwork (such as computer icons, comic book imagery, and simple graphic illustrations) consist of distinctly colored regions with piecewise continuous boundaries.
+> For a range of historic reasons, many such images are still generated in raster, or bitmap formats" [[1]].
 
-    "In computer graphics and digital photography, a raster graphic is a dot matrix data structure that represents a generally rectangular grid of pixels (points of color), viewable via a computer display, paper, or other display medium" [2].
+> "In computer graphics and digital photography, a raster graphic is a dot matrix data structure that represents a generally rectangular grid of pixels (points of color), viewable via a computer display, paper, or other display medium" [[2]].
 
-Vector graphics formats are complementary to raster graphics, and it consists in encoding information about shapes and colors that comprise the image, which can allow for more flexibility in rendering [3].
+Vector graphics formats are complementary to raster graphics, and it consists in encoding information about shapes and colors that comprise the image, which can allow for more flexibility in rendering [[3]].
 Not surprising, raster images can be converted into vector graphics by software.
 
 Again, among some intuitive and unstructured web search I reached to these articles:
@@ -57,9 +57,9 @@ Again, among some intuitive and unstructured web search I reached to these artic
 
 It seems that vectorization has some high commercial value, since here we have more presence of proprietary software and algorithms, but we still do have free and open-source alternatives.
 
-Among the free and open source, we have some options in the community (ex. [4]), but Cairo seemed to be a better choice [5], more a perception, much less a structural reasoning for decision making. (It is important to note here that things did not occur strictly and chronologically as this.)
+Among the free and open source, we have some options in the community (ex. [[4]]), but Cairo seemed to be a better choice [[5]], more a perception, much less a structural reasoning for decision making. (It is important to note here that things did not occur strictly and chronologically as this.)
 
-From [6, 7, 8], it was possible to come up with the solution using pycairo, which amazingly resulted in a pdf file even smaller than that generated with the Gimp manual process. The following script completes the task: see file `sspng2pdf_cairo.py`.
+From [[6], [7], [8]], it was possible to come up with the solution using pycairo, which amazingly resulted in a pdf file even smaller than that generated with the Gimp manual process. The following script completes the task: see file `sspng2pdf_cairo.py`.
 
 Mission accomplished!
 
