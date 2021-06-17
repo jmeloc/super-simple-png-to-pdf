@@ -25,7 +25,7 @@ To start the quest for a solution, I was looking for something that could be mad
 ### Step 1: Pillow
 
 Among some intuitive and unstructured web search I reached to this article [Image Processing in Python with Pillow](https://auth0.com/blog/image-processing-in-python-with-pillow/) from auth0 Blog, identifying Pillow as a natural resource to use.
-From this, and with the help of [Pillow library documentation](https://pillow.readthedocs.io/en/stable/reference/Image.html), the following script was made to complete the task: see file `sspng2pdf_pil.py`.
+From this, and with the help of [Pillow library documentation](https://pillow.readthedocs.io/en/stable/reference/Image.html), the following script was made to complete the task: see file [`sspng2pdf_pil.py`](sspng2pdf_pil.py).
 
 The result was great, and the mission could have been concluded, except for the file size, which was almost two-fold the size obtained in the manual process using Gimp.
 
@@ -59,7 +59,7 @@ It seems that vectorization has some high commercial value, since here we have m
 
 Among the free and open source, we have some options in the community (ex. [[4]]), but Cairo seemed to be a better choice [[5]], more a perception, much less a structural reasoning for decision making. (It is important to note here that things did not occur strictly and chronologically as this.)
 
-From [[6], [7], [8]], it was possible to come up with the solution using pycairo, which amazingly resulted in a pdf file even smaller than that generated with the Gimp manual process. The following script completes the task: see file `sspng2pdf_cairo.py`.
+From [[6], [7], [8]], it was possible to come up with the solution using pycairo, which amazingly resulted in a pdf file even smaller than that generated with the Gimp manual process. The following script completes the task: see file [`sspng2pdf_cairo.py`](sspng2pdf_cairo.py).
 
 Mission accomplished!
 
